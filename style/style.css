@@ -1,25 +1,34 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400px;
+}
+
+/* barra de navegacion */
+
 .nav-chico {
+    display: flex;
+    justify-content: space-between;
     background-color: black;
     color: white;
     padding: 0px;
     height: 25px;
 }
 
-.ofertas li {
-    display: flex;
-    list-style-type: none;
-}
-
 .idiomas {
     display: flex;
-    justify-content: right;
 }
 
 .idiomas li {
+    margin: 5px 10px;
+    text-align: center;
+}
+
+.ofertas li {
     display: flex;
-    padding: 10px 10px 10px;
-    margin: -20px 10px;
+    list-style-type: none;
 }
 
 .nav-bar {
@@ -28,11 +37,33 @@
     color: #FFFFFF;
 }
 
-.categorias {
+.nav-bar-list {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cartel h2 {
+    background-color: #FFFFFF;
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.banner h3 {
+    margin-right: 60px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.categorias {
     padding: 0px 15px 0px 10px;
     margin: 4px 4px 4px;
+    display: flex;
+    text-align: center;
 
 }
 
@@ -48,6 +79,10 @@
 .banner {
     background-image: url('../img/Comida\ 2.png');
     height: 600px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
 }
 
 div h2 {
@@ -62,43 +97,7 @@ div h2 {
     justify-content: center;
 }
 
-h1 {
-    font-size: 50px;
-    text-align: center;
-}
-
-h3 {
-    display: flex;
-    justify-content: center;
-}
-
-.comederos {
-    display: inline-block;
-    left: 450px;
-    background-color: #F0A83E;
-    border-radius: none;
-    color: #FFFFFF;
-    justify-content: center;
-    border: none;
-}
-
-.contenedor-comederos {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-.informacion {
-    background-color: #3C2313;
-    color: #FFFFFF;
-    height: 200px;
-}
-
-footer {
-    background-color: #222222;
-    color: #FFFFFF;
-    text-align: center;
-}
+/* Productos */
 
 .precio {
     color: #F0A83E;
@@ -121,4 +120,92 @@ footer {
 
 .productos-individuales {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.comederos {
+    left: 450px;
+    background-color: #F0A83E;
+    color: #FFFFFF;
+    border: none;
+    margin-right: 100px;
+    padding: 10px;
+}
+
+.contenedor-comederos {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* formulario */
+
+.container-formulario {
+    margin: 20px;
+    padding: 20px;
+}
+
+.container-formulario h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario li {
+    margin: 10px;
+}
+
+.formulario li input {
+    background-color: #3C2313;
+    border-radius: 15px;
+    height: 30px;
+    width: 400px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+div button {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+#resetear {
+    background-color: #8A8787;
+}
+
+#enviar {
+    background-color: #F0A83E;
+}
+
+footer {
+    background-color: #222222;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.informacion {
+    background-color: #3C2313;
+    color: #FFFFFF;
+    height: 200px;
 }

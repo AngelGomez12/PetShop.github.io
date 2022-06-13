@@ -7,20 +7,25 @@
     <title>Pet Shop</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="nav-chico">
-            <ul class="ofertas">
-                <li>Grandes ofertas en comederos</li>
+                <div>
+                    <h3>Grandes ofertas en comederos</h3>
+                </div>
+               <div>
                 <ul class="idiomas">
                     <li>Español</li>
                     <li>$Arg</li>
                 </ul>
-            </ul>
+               </div>
             </nav>
             <nav class="nav-bar">
-            <ul>
+            <ul class="nav-bar-list">
                 <p class="front">FrontCat&Dog</p>
                 <ul class="categorias">
                     <li>Categorias</li>
@@ -48,7 +53,9 @@
             <h1>Productos Destacados</h1>
             <ul  class="accesorios">
                 <li>Comederos</li>
+                <li>-</li>
                 <li>Accesorios</li>
+                <li>-</li>
                 <li>Comida</li>
             </ul>
 
@@ -82,15 +89,35 @@
                 </div>
             </div>
         </section>
+        <section class="container-formulario">
+            <h3>Contactanos</h3>
+            <form action=""></form>
+            <ul class="formulario">
+                <li>
+                <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <input type="mail" id="mail" name="user_mail">
+                </li>
+                <li>
+                    <input type="number" id="telefono" name="user_telefono">
+                </li>
+            </ul>
+                <div class="button">
+                    <div>
+                        <button id="resetear" type="reset">Resetear</button>
+                    </div>
+                    <div>
+                        <button id="enviar" type="button">Enviar</button>
+                    </div>
+                </div>
+        </section>
         <section class="informacion">
             <p><span>Localidad</span> Callle - Provincia</p>
             <p><span>Numero de Telefono</span> 15-1111-1111-111</p>
             <p><span>Correo Electronico</span> Sarassa@gmail.com</p>
-
             <p>FrontCat&Dog</p>
         </section>
-
-
     <footer>
         <p>Todos los derechos reservados Front End</p>
     </footer>
