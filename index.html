@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Shop</title>
+    <title> Pet Shop</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,19 +19,19 @@
                 </div>
                <div>
                 <ul class="idiomas">
-                    <li>Español</li>
-                    <li>$Arg</li>
+                    <li>Español <img src="img/down.png" alt=""></li>
+                    <li>ARG$ <img src="img/down.png" alt=""></li>
                 </ul>
                </div>
             </nav>
             <nav class="nav-bar">
             <ul class="nav-bar-list">
-                <p class="front">FrontCat&Dog</p>
+                <p class="front"><img src="img/Cat.png" alt="cat"> <span>Front</span> Cat&Dog <img src="img/Dog.png" alt="Dog"></p>
                 <ul class="categorias">
-                    <li>Categorias</li>
-                    <li>Pets</li>
-                    <li>Nosotros</li>
-                    <li>Contactanos</li>
+                    <li> <img src="img/pawprint 1.png" alt=""> Categorias</li>
+                    <li><img src="img/pawprint 1.png" alt=""> Pets</li>
+                    <li><img src="img/pawprint 1.png" alt=""> Nosotros</li>
+                    <li><img src="img/pawprint 1.png" alt=""> Contactanos</li>
                 </ul>
             </ul>
         </nav>
@@ -48,7 +48,7 @@
         </section>
         <section>
             <div class="patas">
-                <img src="img/Patitas.png" alt="Patitas">
+                <img id="logo-patas" src="img/Patitas.png" alt="Patitas">
             </div>
             <h1>Productos Destacados</h1>
             <ul  class="accesorios">
@@ -112,13 +112,48 @@
                     </div>
                 </div>
         </section>
-        <section class="informacion">
-            <p><span>Localidad</span> Callle - Provincia</p>
-            <p><span>Numero de Telefono</span> 15-1111-1111-111</p>
-            <p><span>Correo Electronico</span> Sarassa@gmail.com</p>
-            <p>FrontCat&Dog</p>
+        <section class="container-suscribete">
+            <div class="suscribete">
+                <p> <img src="img/Group.png" alt="Suscribete" > <span>Suscribete para mas novedades</span></p>
+            </div>
+            <div class="suscribete-form">
+                <div><input class="mail" type="email" id="mail" name="mail"></div>
+                <div><button id="suscribirme">Suscribirme</button></div>
+            </div>
         </section>
-    <footer>
+        <section class="informacion">
+          <div class="container-informacion-contacto">
+              <div class="informacion-contato">
+              <div class="informacion-icono">
+                <img src="img/icono-direccion.png" alt="direccion">
+              </div>
+                <div class="informacion-correo">
+                    <div class="informacion-actualidad">Localidad</div> <div class="informacion-cambiar">Callle - Provincia</div>
+                </div>
+            </div>
+            <div class="informacion-contato">
+                <div class="informacion-icono">
+                    <img src="img/icono-telefono.png" alt="telefono">
+                </div>
+                <div class="informacion-correo">
+                    <div class="informacion-actualidad">Numero de Telefono</div> <div class="informacion-cambiar">15-1111-1111-111</div> 
+                </div>
+            </div>
+            <div class="informacion-contato">
+                <div class="informacion-icono">
+                    <img src="img/icono-correo.png" alt="correo">
+                </div>
+                <div class="informacion-correo">
+                    <div class="informacion-actualidad">Correo Electronico</div> <div class="informacion-cambiar"> Sarassa@gmail.com</div>
+                </div>
+            </div>
+        </div>       
+          </div>
+            <div class="informacion-front">
+                <p> <img src="img/Cat.png" alt="cat"> Front<span>Cat&Dog</span> <img src="img/Dog.png" alt="Dog"></p>
+            </div>
+        </section>
+    <footer id="footer">
         <p>Todos los derechos reservados Front End</p>
     </footer>
 </body>

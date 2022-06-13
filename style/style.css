@@ -11,14 +11,21 @@
 .nav-chico {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: black;
     color: white;
     padding: 0px;
     height: 25px;
 }
 
+header .nav-chico div h3 {
+    margin-left: 90px;
+}
+
 .idiomas {
     display: flex;
+    font-family: 'Roboto','sans serif';
+    font-weight: 400;
 }
 
 .idiomas li {
@@ -64,20 +71,36 @@
     margin: 4px 4px 4px;
     display: flex;
     text-align: center;
-
+    
 }
 
 .categorias li {
     padding: 5px 30px 40px 5px;
     margin: -10px;
+    font-size: 20px;
 }
 
 .front {
     font-size: 25px;
+    font-family: 'Roboto','sans serif';
+}
+
+.front span {
+    color: #3C2313;
+}
+
+/* main */
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
 }
 
 .banner {
     background-image: url('../img/Comida\ 2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 600px;
     display: flex;
     align-items: flex-end;
@@ -95,6 +118,12 @@ div h2 {
 .patas {
     display: flex;
     justify-content: center;
+}
+
+#logo-patas {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
 }
 
 /* Productos */
@@ -116,6 +145,7 @@ div h2 {
 .productos {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 } 
 
 .productos-individuales {
@@ -125,10 +155,12 @@ div h2 {
     align-items: center;
 }
 
-h1 {
-    font-size: 50px;
-    text-align: center;
+.productos-individuales img {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 5px;
 }
+
 
 .comederos {
     left: 450px;
@@ -196,16 +228,98 @@ div button {
 #enviar {
     background-color: #F0A83E;
 }
+/* Suscribete */
 
-footer {
+.container-suscribete {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0A83E;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.suscribete p {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.suscribete p span {
+    margin-left: 10px;
+}
+
+.suscribete-form {
+    display: flex;
+    align-items: center;
+    margin: 10px 30px 10px 0px;
+}
+
+#suscribirme {
+    background-color: #3C2313;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    border: none;
+}
+
+.mail {
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    border: none;
+}
+
+/* informacion */
+
+.informacion {
+    background-color: #3C2313;
+    color: #FFFFFF;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.informacion-contato {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.informacion-icono {
+    margin-right: 10px;
+}
+
+.informacion-actualidad {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.informacion-cambiar {
+    font-size: 13px;
+    color: #8A8787;
+}
+
+.informacion-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 55px;
+    font-size: 30px;
+}
+
+.informacion-front span {
+    color: #F0A83E;
+}
+
+#footer {
     background-color: #222222;
     color: #FFFFFF;
     text-align: center;
 }
 
-
-.informacion {
-    background-color: #3C2313;
-    color: #FFFFFF;
-    height: 200px;
-}
