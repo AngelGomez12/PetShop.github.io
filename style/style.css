@@ -50,19 +50,22 @@ header .nav-chico div h3 {
     padding: 20px;
 }
 
+/* banner */
+
 .cartel h2 {
     background-color: #FFFFFF;
     color: black;
     padding: 10px;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     margin-right: 15px;
+    border-radius: 5px;
 }
 
 .banner h3 {
-    margin-right: 60px;
+    margin-right: 150px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -106,6 +109,22 @@ h1 {
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
+}
+
+.comederos {
+    left: 450px;
+    background-color: rgb(240, 168, 62);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-right: 250px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.contenedor-comederos {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 div h2 {
@@ -162,20 +181,6 @@ div h2 {
 }
 
 
-.comederos {
-    left: 450px;
-    background-color: #F0A83E;
-    color: #FFFFFF;
-    border: none;
-    margin-right: 100px;
-    padding: 10px;
-}
-
-.contenedor-comederos {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
 
 /* formulario */
 
