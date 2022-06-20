@@ -38,6 +38,10 @@ header .nav-chico div h3 {
     list-style-type: none;
 }
 
+#menu {
+    visibility: hidden;
+}
+
 .nav-bar {
     background-color: #F0A83E;
     height: 60px;
@@ -80,7 +84,7 @@ header .nav-chico div h3 {
 .categorias li {
     padding: 5px 30px 40px 5px;
     margin: -10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .front {
@@ -205,11 +209,19 @@ div h2 {
     margin: 10px;
 }
 
+
 .formulario li input {
     background-color: #3C2313;
     border-radius: 15px;
     height: 30px;
     width: 400px;
+    color: #FFFFFF;
+}
+
+::placeholder {
+    /* modern browser */
+    color: #FFFFFF;
+    padding-left: 10px;
 }
 
 .button {
@@ -329,3 +341,39 @@ div button {
     text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+   
+   body {
+    width: 100vw;
+    justify-content: center;
+   }
+
+   .nav-bar {
+    display: flex;
+   }
+
+   .categorias {
+    visibility: hidden;
+   }
+
+   .front {
+    display: flex;
+    align-items: flex-start;
+   }
+
+   #menu {
+    visibility: visible;
+    padding: 20px;
+    position: absolute;
+    left: 400px;
+   }
+   
+   
+    .nav-chico {
+        visibility: hidden;
+        display: none;
+}
+
+    
+
+}
