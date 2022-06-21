@@ -428,10 +428,13 @@ div button {
     }
 
     .cartel h2 {
-        width: 50%;
-    
+        font-size: 2rem;
     }
 
+    .cartel {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
